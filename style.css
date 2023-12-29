@@ -897,6 +897,18 @@ footer .copywright{
 #page-header .about-header{
     background-image: url(images/bg1.avif);
 }
+#about h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #cf4c85;
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+#about p marquee{
+    font-size: 20px;
+    margin-top: 30px;
+    
+}
 #about-head{
     display: flex;
     align-items: center;
@@ -955,7 +967,7 @@ footer .copywright{
     font-size: 18px;
     line-height: 25px;
     margin: 40px 20px;
-    font-weight: 400;
+    font-weight: 600;
 }
 #about-head .head1{
     position: absolute;
@@ -975,6 +987,83 @@ footer .copywright{
 
 }
 
+#about-fe{
+    text-align: center;
+}
+#about-fe .fe-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 40px;
+}
+#about-fe .fe-cards .fe-card{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.2s ease;  
+    position: relative;
+}
+#about-fe .fe-cards .fe-card img{
+    border: 5px solid #d09eb4;
+    width: 80%;
+    height: 20vh;
+    border-radius: 50%;
+    transition: all 1s ease;
+
+}
+#about-fe .fe-card .fe-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -1000%;
+    position:absolute;
+    backdrop-filter: blur(5px);
+    transition: all 0.2s ease-in-out;
+    background-color: #d09eb4;
+    border-radius:10px ;
+    
+}
+#about-fe .fe-card .fe-content h4{
+    color: wheat;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 40px 20px 10px 20px;
+    font-weight: 700;
+    text-align: center;
+}
+#about-fe .fe-card .fe-content p{
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 10px 20px 40px 20px;
+    font-weight: 500;
+    text-align: center;
+}
+#about-fe h2{
+    color: #cf4c85;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+#about-fe .fe-card:hover img{
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+}
+#about-fe .fe-card:hover .fe-content{
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #about-app{
     text-align: center;
 }
@@ -983,13 +1072,31 @@ footer .copywright{
     height: 100%;
     margin: 30px auto 0 auto;
 }
-#about-app .video video{
+#about-app .video iframe{
     width: 100%;
-    height: 100%;
+    
     border: 2px solid black;
     border-radius: 20px;
 }
-
+#community{
+    text-align: center;
+    padding: 40px 40px;
+}
+#community img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+#community p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    padding: 10px 0;
+}
+#community p span{
+    color: #cf4c85;
+    font-size: 20px;
+}
 
 
 
