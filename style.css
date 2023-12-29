@@ -98,12 +98,15 @@ button.white{
     text-decoration: none;
 }
 
-#header a span{
+#header a span, #about h1{
     font-family:Sevillana;
     color: #cf4c85;
     font-size: 40px;
     font-weight: 700;
     
+}
+#about h1, #about h4, #about p{
+    text-align: center;
 }
 
 
@@ -414,12 +417,12 @@ button.white{
     transform: scale(1.1);
 }
 
-#newarr{
+.newarr{
     text-align: center;
     background-color: #ffffff;
 background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
 }
-#newarr .newarr-container{
+.newarr .newarr-container{
     position: relative;
     width: 100%;
     display: flex;
@@ -428,7 +431,7 @@ background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
     align-items: center;
     padding: 30px;
 }
-#newarr .newarr-card{
+.newarr .newarr-card{
     position: relative;
     max-width: 300px;
     height: 215px;
@@ -441,10 +444,10 @@ background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
     box-shadow: 0 5px 200px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
 }
-#newarr .newarr-card:hover{
+.newarr .newarr-card:hover{
     height: 420px;
 }
-#newarr .img-box{
+.newarr .img-box{
     position: relative;
     width: 260px;
     height: 300px;
@@ -453,12 +456,12 @@ background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
     z-index: 1;
     /* box-shadow: 0 5px 20px rgba(0,0,0,0.2); */
 }
-#newarr .img-box img{
+.newarr .img-box img{
     width: 200px;
     height: 230px;
     border-radius: 4px;
 }
-#newarr .newarr-card .newarr-content{
+.newarr .newarr-card .newarr-content{
     position: relative;
    margin-top: -140px;
    padding: 10px 15px;
@@ -468,28 +471,28 @@ background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
-#newarr .newarr-content span{
+.newarr .newarr-content span{
     font-size: 20px;
     padding: 8px 0;
     margin-bottom: 5px;
     font-weight: 800;
 }
-#newarr .newarr-content h4{
+.newarr .newarr-content h4{
     font-size: 16px;
     font-weight: 600;
     padding-top: 5px;
 }
-#newarr .newarr-content h5{
+.newarr .newarr-content h5{
     font-size: 16px;
     font-weight: 600;
     padding: 5px;
 }
-#newarr .newarr-card .newarr-content .star{
+.newarr .newarr-card .newarr-content .star{
     font-size: 14px;
     color: rgb(243,181,25);
     
 }
-#newarr .newarr-card button{
+.newarr .newarr-card button{
     background-color: #d09eb4;
     color: white;
     padding: 5px 15px;
@@ -502,18 +505,18 @@ background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
     visibility: hidden;
     
 }
-#newarr .newarr-card:hover .newarr-content{
+.newarr .newarr-card:hover .newarr-content{
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
 }
-#newarr .newarr-card:hover button{
+.newarr .newarr-card:hover button{
     background-color: #d09eb4;
     color: white;
     visibility: visible;
 }
-#newarr .newarr-card:hover button span{
+.newarr .newarr-card:hover button span{
     font-size: 18px;
 }
 
@@ -898,13 +901,80 @@ footer .copywright{
     display: flex;
     align-items: center;
 }
-#about-head img{
+#about-head .about-card{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+#about-head .about-card .about-img{
+    margin: 0 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+#about-head .about-img img{
+    border: 5px solid #d09eb4;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+   
+}
+#about-head .about-img .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    height: auto;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position:absolute;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
 }
-#about-head div{
-    padding-left: 40px;
+#about-head .about-img:hover .content1{
+    right: 50%;
 }
+#about-head .about-img:hover .content2{
+    right: 0;
+}
+#about-head .about-img:hover .card-head{
+    display: none;
+}
+.card-body p{
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 40px 20px;
+    font-weight: 400;
+}
+#about-head .head1{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+#about-head .head2{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+}
+#about-head .card-head h2{
+    color: #cf4c85;
+    text-align: center;
+
+}
+
 #about-app{
     text-align: center;
 }
