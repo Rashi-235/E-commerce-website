@@ -961,6 +961,7 @@ footer .copywright{
     backdrop-filter: blur(5px);
     border-radius: 20px;
     transition: all 1s ease-in-out;
+    text-shadow: 0 0 15px black;
 }
 #about-head .about-img:hover .content1{
     right: 50%;
