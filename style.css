@@ -839,6 +839,70 @@ footer .copywright{
     color: white;
     text-shadow: 8px 4px 4px #000000;
 }
+
+#blog-head{
+    border: 10px solid #d09eb4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+    background:url(images/bg21.jpg);
+    opacity: 0.7;
+    
+}
+#blog-head .head-container{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#blog-head .head-container .blog-himg{
+    display: flex;
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+#blog-head .head-container .blog-himg img{
+    margin: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s ease;
+}
+#blog-head .blog-himg #img1{
+    transform: rotate(-10deg);
+}
+#blog-head .blog-himg #img2{
+    transform: rotate(4deg);
+}
+#blog-head .descr{
+    background-color:white;
+    border: 5px solid wheat;
+    padding: 60px 50px;
+    transform: rotate(-5deg);
+    width: 30%;
+    height: 80%;
+    margin: 30px auto;
+}
+#blog-head .descr h3{
+    transform: rotate(5deg);
+    font-size: 25px;
+    font-weight: 600;
+    color: #cf4c85;
+    padding: 10px 0;
+
+}
+#blog-head .descr abbr{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    padding: 10px 0;
+  
+}
 #blog{
     padding: 150px 150px 0 150px;
 
