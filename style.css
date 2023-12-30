@@ -271,7 +271,7 @@ button.white{
     object-fit: cover;
     left: 0;
     top: 0;
-    transition: 2s;
+    transition: 1s;
     border-radius: 20px;
 }
 .card:hover .card-img{
@@ -286,10 +286,21 @@ button.white{
     backdrop-filter: blur(5px);
     transition: 1s ease;
 }
+.card:hover .card-content{
+    height: 100%;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    scale: 1.1;
+    border-radius: 20px;
+}
+
 .card-content h2{
     font-size: 1.9rem;
     font-weight: 700;
     color: #fff;
+    padding-top:0;
     margin-bottom: 0.5rem;
 }
 .card-content p{
@@ -313,10 +324,7 @@ button.white{
     color: rgb(243,181,25);
     font-size: 1.15rem;
 }
-.card:hover .card-content{
-    display: block;
-    
-}
+
 
  #product1{
     text-align: center;
