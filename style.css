@@ -98,7 +98,7 @@ button.white{
     text-decoration: none;
 }
 
-#header a span, #about h1{
+#header a span, #about h1, #privacy-policy h1{
     font-family:Sevillana;
     color: #cf4c85;
     font-size: 40px;
@@ -1285,6 +1285,45 @@ footer .copywright{
     font-size: 16px;
     font-weight: 600;
     color: #000;
+}
+
+
+
+
+
+
+
+/* privacy-policy page */
+
+
+#privacy-policy h1, h4, #date{
+    text-align: center;
+}
+#privacy-policy h1{
+    padding: 40px 0 0 0;
+}
+#privacy-policy h3, #terms h3{
+    padding: 5px 30px 0 20px;
+
+}
+#privacy-policy h5, #terms h5{
+    font-size: 14px;
+    padding: 5px 30px 0 20px;
+}
+#privacy-policy p, #terms p{
+    font-size: 12px;
+    padding: 0 30px 0 40px;
+    text-align: justify;
+    line-height: 15px;
+}
+
+#terms ul li{
+    list-style-type: circle;
+    font-size: 12px;
+    padding: 0 30px 0 40px;
+    text-align: justify;
+    line-height: 15px;
+    color: #465b52;
 }
 
 
