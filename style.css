@@ -150,6 +150,65 @@ button.white{
 }
 
 #hero{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    box-shadow: 0 0 3px gray;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.nav{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+}
+.nav button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    color: #cf4c85;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 30px;
+}
+.offer{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 10;
+}
+.offer button{
+    background-color: wheat;
+    color: #136bef;
+    border: 1px;
+    border-style: ridge;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.5s ease;
+ }
+/* #hero{
     background-image: url(images/bg6.avif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,7 +241,7 @@ button.white{
  }
  #hero button:hover{
     transform: scale(1.1);
- }
+ } */
 
  #feature{
     display: flex;
@@ -854,7 +913,6 @@ footer .copywright{
     align-items: center;
     justify-content: space-between;
     padding: 40px 40px;
-    background:url(images/bg21.jpg);
     opacity: 0.7;
     
 }
@@ -910,6 +968,34 @@ footer .copywright{
     color: #818ea0;
     padding: 10px 0;
   
+}
+
+#collage{
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid #d09eb4;
+}
+#collage .collage-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 5px solid #d09eb4;
+}
+#collage .img-a{
+    width: 100%;
+}
+#collage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#collage .content-a{
+    width: 100%;
+    padding: 60px 40px;
+    text-align: center;
+
+
 }
 #blog{
     padding: 150px 150px 0 150px;

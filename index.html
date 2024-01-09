@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nayaab Fashion</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon2.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon2.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="script.js" />
   </head>
   <body>
     <section id="header">
-      <a class="logo" href="#"><span>Nayaab</span>
-      </a>
+      <a class="logo" href="#"><span>Nayaab</span> </a>
       <div id="navbar">
         <ul id="navb">
           <li><a class="active" href="index.html">Home</a></li>
@@ -36,36 +35,57 @@
     </section>
 
     <section id="hero">
+      <img class="slide" src="images/bg6.avif" alt="" />
+      <img class="slide" src="images/bg12.jpg" alt="" />
+      <img class="slide" src="images/bg8.jpg" alt="" />
+      <img class="slide" src="images/bg9.avif" alt="">
+      <img class="slide" src="images/bg10.avif" alt="" />
+
+      <div class="offer">
+        <h4>Trade-in-offer</h4>
+      <h2>Super value deals</h2>
+      <h1>On all products</h1>
+      <p>Save more with coupons & upto 70% off!</p>
+      <a href="shop.html"><button>Shop Now <i class="bi bi-bag-fill"></i></button></a>
+      </div>
+      
+      <div class="nav">
+        <button onclick="goPrev()"><i class="bi bi-caret-left"></i></button>
+        <button onclick="goNext()"><i class="bi bi-caret-right"></i></button>
+      </div>
+    </section>
+
+    <!-- <section id="hero">
       <h4>Trade-in-offer</h4>
       <h2>Super value deals</h2>
       <h1>On all products</h1>
       <p>Save more with coupons & upto 70% off!</p>
       <a href="shop.html"><button>Shop Now <i class="bi bi-bag-fill"></i></button></a>
-    </section>
+    </section> -->
 
     <section id="feature" class="section-p1">
       <div class="fe-box">
-        <img src="images/features/1.jpg" alt="">
+        <img src="images/features/1.jpg" alt="" />
         <h6>Free Shipping</h6>
       </div>
       <div class="fe-box">
-        <img src="images/features/3.jpeg" alt="">
+        <img src="images/features/3.jpeg" alt="" />
         <h6>Order Online</h6>
       </div>
       <div class="fe-box">
-        <img src="images/features/6.jpeg" alt="">
+        <img src="images/features/6.jpeg" alt="" />
         <h6>Save Money</h6>
       </div>
       <div class="fe-box">
-        <img src="images/features/7.jpeg" alt="">
+        <img src="images/features/7.jpeg" alt="" />
         <h6>Promotions</h6>
       </div>
       <div class="fe-box">
-        <img src="images/features/11.jpeg" alt="">
+        <img src="images/features/11.jpeg" alt="" />
         <h6>Happy Sell</h6>
       </div>
       <div class="fe-box">
-        <img src="images/features/9.jpeg" alt="">
+        <img src="images/features/9.jpeg" alt="" />
         <h6>F24/7 Support</h6>
       </div>
     </section>
@@ -75,7 +95,7 @@
       <p>Best Collection With Best Deals</p>
       <div class="cards">
         <div class="card">
-          <img  class="card-img" src="images/product-intro/6.avif" alt="">
+          <img class="card-img" src="images/product-intro/6.avif" alt="" />
           <div class="card-content">
             <h2>Footwear</h2>
             <div class="card-star">
@@ -85,12 +105,17 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p>Step into Style - Discover Trendsetting Footwear for Every Occasion!<br><span>50-70% Off</span></p>
-            <a href="shop.html#shop-b"><button class="normal">Shop now</button></a>
+            <p>
+              Step into Style - Discover Trendsetting Footwear for Every
+              Occasion!<br /><span>50-70% Off</span>
+            </p>
+            <a href="shop.html#shop-b"
+              ><button class="normal">Shop now</button></a
+            >
           </div>
         </div>
         <div class="card">
-          <img  class="card-img" src="images/product-intro/2.jpeg" alt="">
+          <img class="card-img" src="images/product-intro/2.jpeg" alt="" />
           <div class="card-content">
             <h2>Office Wear</h2>
             <div class="card-star">
@@ -100,13 +125,17 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p>Office Chic - Elevate Your Work Wardrobe with Stylish Office Wear! <br><span>40-70% Off</span>
+            <p>
+              Office Chic - Elevate Your Work Wardrobe with Stylish Office Wear!
+              <br /><span>40-70% Off</span>
             </p>
-            <a href="shop.html#shop-c"><button class="normal">Shop now</button></a>
+            <a href="shop.html#shop-c"
+              ><button class="normal">Shop now</button></a
+            >
           </div>
         </div>
         <div class="card">
-          <img  class="card-img" src="images/product-intro/3.jpeg" alt="">
+          <img class="card-img" src="images/product-intro/3.jpeg" alt="" />
           <div class="card-content">
             <h2>Ethnic Wear</h2>
             <div class="card-star">
@@ -116,12 +145,17 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p>Cultural Couture - Unveil Timeless Beauty with Ethnic Wear! <br><span>Upto 60% Off</span></p>
-            <a href="shop.html#shop-d"><button class="normal">Shop now</button></a>
+            <p>
+              Cultural Couture - Unveil Timeless Beauty with Ethnic Wear!
+              <br /><span>Upto 60% Off</span>
+            </p>
+            <a href="shop.html#shop-d"
+              ><button class="normal">Shop now</button></a
+            >
           </div>
         </div>
         <div class="card">
-          <img  class="card-img" src="images/product-intro/11.avif" alt="">
+          <img class="card-img" src="images/product-intro/11.avif" alt="" />
           <div class="card-content">
             <h2>Casual Wear</h2>
             <div class="card-star">
@@ -131,12 +165,18 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p>Effortless Elegance - Dive into Casual Wear Comfort! <br><span>40-80% Off</span></p>
-            <a href="shop.html#shop-e"><button class="normal">Shop now</button></a>
+            <p>
+              Effortless Elegance - Dive into Casual Wear Comfort! <br /><span
+                >40-80% Off</span
+              >
+            </p>
+            <a href="shop.html#shop-e"
+              ><button class="normal">Shop now</button></a
+            >
           </div>
         </div>
         <div class="card">
-          <img  class="card-img" src="images/product-intro/1.jpg" alt="">
+          <img class="card-img" src="images/product-intro/1.jpg" alt="" />
           <div class="card-content">
             <h2>Kids Wear</h2>
             <div class="card-star">
@@ -146,12 +186,17 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p>Tiny Trends for Little Ones - Discover Adorable Kids Wear! <br><span>50-70% Off</span></p>
-            <a href="shop2.html#shop-f"><button class="normal">Shop now</button></a>
+            <p>
+              Tiny Trends for Little Ones - Discover Adorable Kids Wear!
+              <br /><span>50-70% Off</span>
+            </p>
+            <a href="shop2.html#shop-f"
+              ><button class="normal">Shop now</button></a
+            >
           </div>
         </div>
         <div class="card">
-          <img  class="card-img" src="images/product-intro/12.jpeg" alt="">
+          <img class="card-img" src="images/product-intro/12.jpeg" alt="" />
           <div class="card-content">
             <h2>Sports Wear</h2>
             <div class="card-star">
@@ -161,12 +206,17 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p>Elevate Your Game - Unleash Style with Sports Wear Excellence! <br><span>30-80%</span></p>
-            <a href="shop2.html#shop-g"><button class="normal">Shop now</button></a>
+            <p>
+              Elevate Your Game - Unleash Style with Sports Wear Excellence!
+              <br /><span>30-80%</span>
+            </p>
+            <a href="shop2.html#shop-g"
+              ><button class="normal">Shop now</button></a
+            >
           </div>
         </div>
         <div class="card">
-          <img  class="card-img" src="images/product-intro/8.avif" alt="">
+          <img class="card-img" src="images/product-intro/8.avif" alt="" />
           <div class="card-content">
             <h2>Sunglasses, Watches & Bags</h2>
             <div class="card-star">
@@ -176,12 +226,17 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p>Accessorize Your Essence - Explore Fashion-Forward Accessories! <br><span>Upto 80% Off</span></p>
-            <a href="shop2.html#shop-h"><button class="normal">Shop now</button></a>
+            <p>
+              Accessorize Your Essence - Explore Fashion-Forward Accessories!
+              <br /><span>Upto 80% Off</span>
+            </p>
+            <a href="shop2.html#shop-h"
+              ><button class="normal">Shop now</button></a
+            >
           </div>
         </div>
         <div class="card">
-          <img  class="card-img" src="images/product-intro/7.avif" alt="">
+          <img class="card-img" src="images/product-intro/7.avif" alt="" />
           <div class="card-content">
             <h2>Beauty & Makeup</h2>
             <div class="card-star">
@@ -191,12 +246,16 @@
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
             </div>
-            <p>Style, Simplified - One Stop Shop for Fashion, Beauty, and More <br><span>Upto 60% Off</span></p>
-            <a href="shop2.html#shop-i"><button class="normal">Shop now</button></a>
+            <p>
+              Style, Simplified - One Stop Shop for Fashion, Beauty, and More
+              <br /><span>Upto 60% Off</span>
+            </p>
+            <a href="shop2.html#shop-i"
+              ><button class="normal">Shop now</button></a
+            >
           </div>
         </div>
       </div>
-      
     </section>
 
     <section id="banner" class="section-m1">
@@ -211,11 +270,13 @@
       <div class="newarr-container">
         <div class="newarr-card">
           <div class="img-box product-img">
-            <img src="images/footwear/9.avif" alt="">
+            <img src="images/footwear/9.avif" alt="" />
           </div>
           <div class="newarr-content">
             <span>adidas</span>
-           <div class="product-title"><h5 class="product-title">Cartoon Astronaut T-Shirts</h5></div>
+            <div class="product-title">
+              <h5 class="product-title">Cartoon Astronaut T-Shirts</h5>
+            </div>
             <div class="star">
               <i class="bi bi-star-fill"></i>
               <i class="bi bi-star-fill"></i>
@@ -225,11 +286,12 @@
             </div>
             <div class="price"><h4 class="price">$78</h4></div>
           </div>
-          <button class="normal"><span>Buy Now</span></button><button class="normal add-cart"><span>Add to Cart</span></button>
+          <button class="normal"><span>Buy Now</span></button
+          ><button class="normal add-cart"><span>Add to Cart</span></button>
         </div>
         <div class="newarr-card">
           <div class="img-box">
-            <img src="images/ethnic wear/9.avif" alt="">
+            <img src="images/ethnic wear/9.avif" alt="" />
           </div>
           <div class="newarr-content">
             <span>adidas</span>
@@ -243,11 +305,12 @@
             </div>
             <h4>$78</h4>
           </div>
-          <button class="normal"><span>Buy Now</span></button><button class="normal"><span>Add to Cart</span></button>
+          <button class="normal"><span>Buy Now</span></button
+          ><button class="normal"><span>Add to Cart</span></button>
         </div>
         <div class="newarr-card">
           <div class="img-box">
-            <img src="images/office wear/10.webp" alt="">
+            <img src="images/office wear/10.webp" alt="" />
           </div>
           <div class="newarr-content">
             <span>adidas</span>
@@ -261,11 +324,12 @@
             </div>
             <h4>$78</h4>
           </div>
-          <button class="normal"><span>Buy Now</span></button><button class="normal"><span>Add to Cart</span></button>
+          <button class="normal"><span>Buy Now</span></button
+          ><button class="normal"><span>Add to Cart</span></button>
         </div>
         <div class="newarr-card">
           <div class="img-box">
-            <img src="images/ethnic wear/10.webp" alt="">
+            <img src="images/ethnic wear/10.webp" alt="" />
           </div>
           <div class="newarr-content">
             <span>adidas</span>
@@ -279,11 +343,12 @@
             </div>
             <h4>$78</h4>
           </div>
-          <button class="normal"><span>Buy Now</span></button><button class="normal"><span>Add to Cart</span></button>
+          <button class="normal"><span>Buy Now</span></button
+          ><button class="normal"><span>Add to Cart</span></button>
         </div>
         <div class="newarr-card">
           <div class="img-box">
-            <img src="images/casual wear/1.jpg" alt="">
+            <img src="images/casual wear/1.jpg" alt="" />
           </div>
           <div class="newarr-content">
             <span>adidas</span>
@@ -297,11 +362,12 @@
             </div>
             <h4>$78</h4>
           </div>
-          <button class="normal"><span>Buy Now</span></button><button class="normal"><span>Add to Cart</span></button>
+          <button class="normal"><span>Buy Now</span></button
+          ><button class="normal"><span>Add to Cart</span></button>
         </div>
         <div class="newarr-card">
           <div class="img-box">
-            <img src="images/kids wear/10.webp" alt="">
+            <img src="images/kids wear/10.webp" alt="" />
           </div>
           <div class="newarr-content">
             <span>adidas</span>
@@ -315,11 +381,12 @@
             </div>
             <h4>$78</h4>
           </div>
-          <button class="normal"><span>Buy Now</span></button><button class="normal"><span>Add to Cart</span></button>
+          <button class="normal"><span>Buy Now</span></button
+          ><button class="normal"><span>Add to Cart</span></button>
         </div>
         <div class="newarr-card">
           <div class="img-box">
-            <img src="images/footwear/10.jpg" alt="">
+            <img src="images/footwear/10.jpg" alt="" />
           </div>
           <div class="newarr-content">
             <span>adidas</span>
@@ -333,11 +400,12 @@
             </div>
             <h4>$78</h4>
           </div>
-          <button class="normal"><span>Buy Now</span></button><button class="normal"><span>Add to Cart</span></button>
+          <button class="normal"><span>Buy Now</span></button
+          ><button class="normal"><span>Add to Cart</span></button>
         </div>
         <div class="newarr-card">
           <div class="img-box">
-            <img src="images/kids wear/9.webp" alt="">
+            <img src="images/kids wear/9.webp" alt="" />
           </div>
           <div class="newarr-content">
             <span>adidas</span>
@@ -351,9 +419,9 @@
             </div>
             <h4>$78</h4>
           </div>
-          <button class="normal"><span>Buy Now</span></button><button class="normal"><span>Add to Cart</span></button>
+          <button class="normal"><span>Buy Now</span></button
+          ><button class="normal"><span>Add to Cart</span></button>
         </div>
-       
       </div>
     </section>
 
@@ -377,7 +445,7 @@
     <section id="banner3">
       <div class="banner-box">
         <h2>SEASONAL SALE</h2>
-        <h3> Winter Collection -50% Off</h3>
+        <h3>Winter Collection -50% Off</h3>
       </div>
       <div class="banner-box banner-box2">
         <h2>NEW FOOTWEAR COLLECTION</h2>
@@ -385,28 +453,33 @@
       </div>
       <div class="banner-box banner-box3">
         <h2>T-SHIRTS</h2>
-        <h3> New trendy prints</h3>
+        <h3>New trendy prints</h3>
       </div>
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
       <div class="newstext">
         <h4>Sign up for Newsletters</h4>
-        <p>Get E-mail updates about our latest shop and <span>special offers</span> </p>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span>special offers</span>
+        </p>
       </div>
       <div class="form">
-        <input type="text" placeholder="Your email address">
+        <input type="text" placeholder="Your email address" />
         <button class="normal">Sign Up</button>
       </div>
     </section>
 
     <footer class="section-p1">
       <div class="col">
-        <a class="logo" href="#"><span>Nayaab</span>
-        </a>
+        <a class="logo" href="#"><span>Nayaab</span> </a>
         <h4>Contact</h4>
-        <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
-        <p><strong>Phone:  </strong>+01 2222 365 /(+91) 01 2345 6789</p>
+        <p>
+          <strong>Address: </strong> 562 Wellington Road, Street 32, San
+          Francisco
+        </p>
+        <p><strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789</p>
         <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
         <div class="follow">
           <h4>Follow Us</h4>
@@ -439,19 +512,17 @@
         <h4>Install App</h4>
         <p>From App Store or Google Play Store</p>
         <div class="row">
-        <img src="images/asset10.jpeg" alt="" >
-        <img src="images/asset11.jpeg" alt="" >
-          
+          <img src="images/asset10.jpeg" alt="" />
+          <img src="images/asset11.jpeg" alt="" />
         </div>
         <p>Secured Payment Gateways</p>
-        <img src="images/asset8.png" alt="" width="100%" height="95vh" >
+        <img src="images/asset8.png" alt="" width="100%" height="95vh" />
       </div>
       <div class="copywright">
         <p>&copy 2024. Nayaab Fashion- All Rights Reserved</p>
       </div>
     </footer>
 
-    
     <script src="script.js"></script>
   </body>
 </html>
